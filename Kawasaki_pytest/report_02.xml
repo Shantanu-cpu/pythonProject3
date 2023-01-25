@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="0.061" timestamp="2023-01-08T06:29:20.349372" hostname="LAPTOP-U3FVKD65"><testcase classname="kawasaki_pytest.test_first_program" name="test_validation_01" time="0.001" /><testcase classname="kawasaki_pytest.test_first_program" name="test_validation_02" time="0.001"><failure message="assert not 10 == 10">def test_validation_02():
+        x=10
+        y=10
+&gt;       assert not x==y
+E       assert not 10 == 10
+
+test_first_program.py:11: AssertionError</failure></testcase><testcase classname="kawasaki_pytest.test_first_program" name="test_validation_03" time="0.000" /><testcase classname="kawasaki_pytest.test_first_program" name="test_validation_04" time="0.000" /><testcase classname="kawasaki_pytest.test_first_program" name="test_validation_05" time="0.000"><failure message="AssertionError: assert 'Shantanu' is 'Shantanu is learning python'">def test_validation_05():
+        name='Shantanu'
+        sentance='Shantanu is learning python'
+&gt;       assert name is sentance
+E       AssertionError: assert 'Shantanu' is 'Shantanu is learning python'
+
+test_first_program.py:29: AssertionError</failure></testcase></testsuite></testsuites>

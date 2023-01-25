@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="2" tests="8" time="0.078" timestamp="2023-01-08T18:54:56.231015" hostname="LAPTOP-U3FVKD65"><testcase classname="kawasaki_pytest.test_markars" name="test_method_01" time="0.000"><skipped type="pytest.skip" message="unconditional skip">C:\Users\Hp\PycharmProjects\pythonProject3\kawasaki_pytest\test_markars.py:4: unconditional skip</skipped></testcase><testcase classname="kawasaki_pytest.test_markars" name="test_method_02" time="0.000"><skipped type="pytest.skip" message="it is a defect">C:\Users\Hp\PycharmProjects\pythonProject3\kawasaki_pytest\test_markars.py:11: it is a defect</skipped></testcase><testcase classname="kawasaki_pytest.test_markars" name="test_method_03" time="0.001"><failure message="AssertionError: assert 'terminal and... work as same' == 'command prom... work as same'&#10;  - command promt and terminal work as same&#10;  + terminal and command promt work as same">@pytest.mark.skipif(False,reason="both are not same")
+    def test_method_03():
+        x = 'terminal and command promt work as same'
+        y = 'command promt and terminal work as same'
+&gt;       assert x == y
+E       AssertionError: assert 'terminal and... work as same' == 'command prom... work as same'
+E         - command promt and terminal work as same
+E         + terminal and command promt work as same
+
+test_markars.py:22: AssertionError</failure></testcase><testcase classname="kawasaki_pytest.test_markars" name="test_method_04" time="0.001" /><testcase classname="kawasaki_pytest.test_markars" name="test_method_05" time="0.000" /><testcase classname="kawasaki_pytest.test_markars" name="test_method_06" time="0.000"><failure message="AssertionError: assert ' command promt ' in 'command promt and terminal work as same'">def test_method_06():
+        x = ' command promt '
+        y = 'command promt and terminal work as same'
+&gt;       assert x in y
+E       AssertionError: assert ' command promt ' in 'command promt and terminal work as same'
+
+test_markars.py:41: AssertionError</failure></testcase><testcase classname="kawasaki_pytest.test_markars" name="test_method_07[Shantanu-python]" time="0.001" /><testcase classname="kawasaki_pytest.test_markars" name="test_method_07[yes-no]" time="0.001" /></testsuite></testsuites>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="4" time="0.139" timestamp="2023-01-07T22:11:08.422859" hostname="LAPTOP-U3FVKD65"><testcase classname="test_report_generates" name="test_one_01" time="0.003"><failure message="AssertionError: assert 'regrassion testing' == 'retesting an...or automation'&#10;  - retesting and regression used for automation&#10;  + regrassion testing">def test_one_01():
+        x='regrassion testing'
+        y='retesting and regression used for automation'
+&gt;       assert x==y
+E       AssertionError: assert 'regrassion testing' == 'retesting an...or automation'
+E         - retesting and regression used for automation
+E         + regrassion testing
+
+test_report_generates.py:5: AssertionError</failure></testcase><testcase classname="test_report_generates" name="test_one_02" time="0.001"><failure message="AssertionError: assert 'regrassion testing' in 'retesting and regression used for automation'">def test_one_02():
+        x='regrassion testing'
+        y='retesting and regression used for automation'
+&gt;       assert x in y
+E       AssertionError: assert 'regrassion testing' in 'retesting and regression used for automation'
+
+test_report_generates.py:11: AssertionError</failure></testcase><testcase classname="test_report_generates" name="test_one_03" time="0.000"><failure message="AssertionError: assert 'regrassion testing' is 'retesting and regression used for automation'">def test_one_03():
+        x='regrassion testing'
+        y='retesting and regression used for automation'
+&gt;       assert x is y
+E       AssertionError: assert 'regrassion testing' is 'retesting and regression used for automation'
+
+test_report_generates.py:17: AssertionError</failure></testcase><testcase classname="test_report_generates" name="test_one_04" time="0.000" /></testsuite></testsuites>
